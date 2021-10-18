@@ -1,0 +1,111 @@
+@import "common/foundation/variables";
+@import "variables";
+
+.d-header {
+  height: 42px;
+}
+
+// User
+
+.user-table {
+  padding: 1em;
+  background: var(--secondary, $secondary);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.boxed .row {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+// Topic
+
+.topic-body {
+  @include fb-background();
+  padding-right: 1em;
+  width: calc(690px + (11px * 2) - 2em);
+  border-radius: 0 4px 4px 0;
+  border-top: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  &.highlighted {
+    animation: none;
+    @include fb-background();
+  }
+  @media screen and (max-width: 775px) {
+    width: calc(100% - 60px);
+  }
+}
+
+.topic-avatar {
+  @include fb-background();
+  padding-left: 1em;
+  padding-bottom: 1.2em;
+  border-radius: 4px 0 0 4px;
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  .avatar-flair {
+    top: 36px;
+  }
+}
+
+.topic-list .topic-list-item-separator td span {
+  background: #e9ebee;
+}
+
+.small-action {
+  margin-bottom: 1em;
+}
+
+.small-action .topic-avatar {
+  margin-right: 0;
+  padding: 1em 0 1em 0.75em;
+  font-size: 1em;
+  min-height: 26px;
+  align-self: stretch;
+  border-top: 1px solid var(--primary-low, $primary-low);
+  .d-icon {
+    height: 23px;
+  }
+}
+
+.small-action-desc {
+  border-radius: 0 4px 4px 0;
+  border-top: 1px solid #dddfe2;
+  border-right: 1px solid #dddfe2;
+  border-bottom: 1px solid #dddfe2;
+  background: var(--secondary, $secondary);
+}
+
+.time-gap.small-action {
+  .small-action-desc {
+    background: transparent;
+    border: none;
+  }
+  .topic-avatar {
+    display: none;
+  }
+}
+
+.embedded-posts {
+  .topic-avatar,
+  .topic-body {
+    border-top: 1px solid $border-color;
+  }
+}
+
+.read-state {
+  right: 10px;
+}
+
+.tag-drop-row {
+  font-weight: normal !important;
+  font-size: 0.875em;
+}
+
+.presence-users {
+  background: transparent;
+  margin-bottom: 1em;
+}
