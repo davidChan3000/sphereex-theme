@@ -1,6 +1,9 @@
 @import "common/foundation/variables";
 @import "variables";
 
+body{
+  background-color: #fff;
+}
 .d-header {
   height: 42px;
   background-color: lightskyblue;

@@ -8,6 +8,7 @@
   "minimum_discourse_version": null,
   "maximum_discourse_version": null,
   "assets": {
+    "banner": "assets/banner.png"
   },
   "color_schemes": {
     "Fakebook": {
