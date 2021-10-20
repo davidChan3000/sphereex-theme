@@ -91,13 +91,13 @@ body{
     padding:0.858em 0.714em 0.858em 1.514em;
     background:url($category) no-repeat 0 center;
   }
-  .nav-pils #ember37>a{
+  .nav-pills #ember37>a{
     background-image: url($latest);
   }
-  .nav-pils #ember39>a{
+  .nav-pills #ember39>a{
     background-image: url($hot);
   }
-  .nav-pils #ember41>a{
+  .nav-pills #ember41>a{
     background-image: url($read);
   }
   .nav-pills>li>a:hover, .nav-pills>li.active>a, .nav-pills>li>a.active{
