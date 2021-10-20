@@ -48,7 +48,10 @@ body{
   .search-icon{
     background: #3D52C5;
     border-radius: 25px;
-    padding:4px 27px;
+    
+    .d-icon{
+      padding:4px 27px;
+    }
   }
 }
 
