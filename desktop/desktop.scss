@@ -113,7 +113,7 @@ body{
 }
 
 @media screen and (min-width: 650px) {
-  #main-outlet {
+  .categories-list #main-outlet {
     @if $sidebar-alignment == "left" {
       grid-template-columns: 170px auto 240px; // 12 column grid
       
