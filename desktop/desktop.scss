@@ -2,14 +2,16 @@
 @import "variables";
 
 body{
-  background-color: #fff url($banner);
+  background: #fff url($banner) no-repeat;
   font-family:'PingFangSC-Medium', 'PingFang SC';
+  background-size: contain;
+  background-position: top center;
 }
 #main{
   .d-header {
     height: 70px;
     border-bottom:none;
-    background-color: #fff;
+    background-color: transparent;
     #site-logo{
       height: 56px;
     }
@@ -78,6 +80,9 @@ body{
     border-bottom: 1px solid #F1EFEF;
   }
 
+  .categories-and-latest{
+    flex-flow: column;
+  }
   .category-list tbody{border-top:none;}
   .category-list.with-topics {
     margin-left: 3px;
