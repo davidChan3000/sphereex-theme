@@ -131,10 +131,23 @@ body{
       }
     }
   }
-  .dbook-sidebar{
-    border: none;
+  .sidebar{
     box-shadow: 0px 0px 6px 0px #cfd3eb;
     border-radius: 5px;
+    .sidebar-link{
+      padding: 0 15px 15px;
+      display: inline-block;
+    }
+  }
+  .dbook-sidebar{
+    border: none;
+    .badges{
+      padding-bottom: 16px;
+      border-bottom: 1px solid ;
+    }
+    .user-stat{
+      font-size: 12px;
+    }
   }
 }
 
@@ -155,6 +168,11 @@ body:not(.categories-list) .topic-list .main-link{
       
     }
   }
+}
+
+//dbook-sidebar
+.user-badge, .user-card .badge-section .more-user-badges a{
+  font-size: 12px;
 }
 
 // User
