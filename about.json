@@ -11,8 +11,8 @@
     "banner": "assets/banner.png",
     "hot": "assets/hot.png",
     "category": "assets/category.png",
-    "latest": "assects/latest.png",
-    "read": "asscets/read.png"
+    "latest": "assets/latest.png",
+    "read": "assets/read.png"
   },
   "color_schemes": {
     "Fakebook": {
