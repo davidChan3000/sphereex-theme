@@ -3,10 +3,86 @@
 
 body{
   background-color: #fff;
+  font-family:'PingFangSC-Medium', 'PingFang SC';
 }
-.d-header {
-  height: 42px;
-  background-color: lightskyblue;
+#main{
+  .d-header {
+    height: 70px;
+    border-bottom:none;
+    #site-logo{
+      height: 56px;
+    }
+    .login-button{
+      padding: 3px 17px;
+      background: #3D52C5;
+      border-radius: 25px;
+    }
+  }
+}
+
+.custom-search-banner-wrap{
+  padding:4.5em 0 11em;
+  h1{
+    font-size: 50px;
+    font-weight: 500;
+  }
+  p{
+    margin-bottom: 49px;
+  }
+  &>div{
+    max-width: 700px;
+  }
+  .search-menu input[type="text"]{
+    min-height: 50px;
+    border-radius: 25px;
+    border: 1px solid #D4D7E2;
+    padding-left: 23px;
+    background-color: transparent;
+  }
+
+  .btn.widget-button .d-icon{
+    width: 24px;
+    height: 25px;
+    color: #fff;
+  }
+  .search-icon{
+    background: #3D52C5;
+    border-radius: 25px;
+    padding:4px 27px;
+  }
+}
+
+#main-outlet{
+  .list-controls{
+    .container{
+      box-shadow: 0px 0px 5px 0px #cfd3eb, 0px 2px 2px 0px rgb(201 201 201 / 65%);
+      border-radius: 5px;
+      padding: 17px 15px;
+    }
+    .combo-box .combo-box-header{
+      width: 140px;
+      padding:.58em .5em;
+      border-radius: 5px;
+      border: 1px solid #DDDDDD;
+      font-size: 14px;
+    }
+  }
+  .nav-pills>li>a{font-size: 14px;padding:0.858em 0.714em;}
+  .nav-pills>li>a:hover, .nav-pills>li.active>a, .nav-pills>li>a.active{
+    border-bottom: 1px solid #F1EFEF;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #main-outlet {
+    @if $sidebar-alignment == "left" {
+      grid-template-columns: 170px auto 240px; // 12 column grid
+      
+    } @else {
+      grid-template-columns: 170px auto 240px;
+      
+    }
+  }
 }
 
 // User
