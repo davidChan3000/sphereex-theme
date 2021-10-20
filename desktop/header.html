@@ -85,5 +85,11 @@
   {{#if user}}
   <a class="sidebar-link" href="/my/summary">{{i18n (theme-prefix "sidebar.full_profile")}}</a>
   {{/if}}
+  <p>
+  <!--todo-->
+  {{#each sidebar.arr}}
+    <span>{{this}}</span>
+  {{/each}}
+  </p>
 </script>
 
