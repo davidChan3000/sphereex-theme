@@ -16,6 +16,9 @@ body{
     height: 70px;
     border-bottom:none;
     background-color: transparent;
+    .d-header-icons .icon img.avatar{
+      background-color: #D8D8D8;
+    }
     #site-logo{
       height: 56px;
     }
@@ -85,7 +88,7 @@ body{
   }
   .nav-pills>li>a{font-size: 14px;padding:0.858em 0.714em;}
   .nav-pills>li>a:hover, .nav-pills>li.active>a, .nav-pills>li>a.active{
-    border:none;
+    border-color:transparent;
     border-bottom: 1px solid #F1EFEF;
   }
 
@@ -134,6 +137,13 @@ body{
     border-radius: 5px;
   }
 }
+
+#create-topic{background-color: #3d52c5;}
+body:not(.categories-list) .topic-list .main-link{
+  border:none;
+  box-shadow: 0px 0px 6px 0px #cfd3eb;
+}
+.select-kit .select-kit-header .caret-icon{color:#ddd;}
 
 @media screen and (min-width: 650px) {
   .categories-list #main-outlet,.navigation-topics #main-outlet {
