@@ -136,7 +136,7 @@ body{
         &::before{
           content: ".";
           font-size: 42px;
-          color: #3D52C5;
+          color: var(--tertiary);
           position: absolute;
           top: -19px;
           left:0;
@@ -171,6 +171,7 @@ body:not(.categories-list) .topic-list .main-link{
   box-shadow: 0px 0px 6px 0px #cfd3eb;
 }
 .select-kit .select-kit-header .caret-icon{color:#ddd;}
+.select-kit.is-expanded .select-kit-body{border-radius: 5px;}
 
 @media screen and (min-width: 650px) {
   .categories-list #main-outlet,.navigation-topics #main-outlet {
