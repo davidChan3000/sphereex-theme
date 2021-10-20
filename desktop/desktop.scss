@@ -55,7 +55,7 @@ body{
 #main-outlet{
   .list-controls{
     .container{
-      box-shadow: 0px 0px 5px 0px #cfd3eb, 0px 2px 2px 0px rgb(201 201 201 / 65%);
+      box-shadow: 0px 0px 5px 0px #cfd3eb;
       border-radius: 5px;
       padding: 17px 15px;
     }
@@ -70,6 +70,45 @@ body{
   .nav-pills>li>a{font-size: 14px;padding:0.858em 0.714em;}
   .nav-pills>li>a:hover, .nav-pills>li.active>a, .nav-pills>li>a.active{
     border-bottom: 1px solid #F1EFEF;
+  }
+
+  .category-list tbody{border-top:none;}
+  .category-list.with-topics {
+    tbody tr{
+      flex-wrap: wrap;
+      box-shadow: 0px 0px 6px 0px #cfd3eb;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    .category{
+      width: 100%;
+      max-width: unset;
+      border-left: none !important;
+      border-top: 5px solid;
+      /* padding-bottom: 0; */
+      border-radius: 5px;
+      padding: 25px 25px 10px;
+    }
+    .latest{
+      padding:0 25px 25px 25px;box-sizing: border-box;
+      .featured-topic{
+        position: relative;
+        padding-left:17px;
+        &::before{
+          content: ".";
+          font-size: 42px;
+          color: #3D52C5;
+          position: absolute;
+          top: -19px;
+          left:0;
+        }
+      }
+    }
+  }
+  .dbook-sidebar{
+    border: none;
+    box-shadow: 0px 0px 6px 0px #cfd3eb;
+    border-radius: 5px;
   }
 }
 
