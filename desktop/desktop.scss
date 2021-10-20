@@ -2,13 +2,14 @@
 @import "variables";
 
 body{
-  background-color: #fff;
+  background-color: #fff url($banner);
   font-family:'PingFangSC-Medium', 'PingFang SC';
 }
 #main{
   .d-header {
     height: 70px;
     border-bottom:none;
+    background-color: #fff;
     #site-logo{
       height: 56px;
     }
@@ -19,7 +20,9 @@ body{
     }
   }
 }
-
+.wrap{
+  max-width: 1110px;
+}
 .custom-search-banner-wrap{
   padding:4.5em 0 11em;
   h1{
