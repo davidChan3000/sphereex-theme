@@ -87,9 +87,13 @@ body{
     }
   }
   .nav-pills>li:first-child{
-    background:url($category) no-repeat;
+    
   }
-  .nav-pills>li>a{font-size: 14px;padding:0.858em 0.714em;}
+  .nav-pills>li>a{
+    font-size: 14px;
+    padding:0.858em 0.714em;
+    background:url($category) no-repeat 0 center;
+  }
   .nav-pills>li>a:hover, .nav-pills>li.active>a, .nav-pills>li>a.active{
     border-color:transparent;
     border-bottom: 1px solid #F1EFEF;
@@ -144,6 +148,7 @@ body{
   }
   .dbook-sidebar{
     border: none;
+    padding-bottom: 5px;
     .badges{
       padding-bottom: 16px;
       border-bottom: 1px solid var(--primary-low, #e9e9e9);
