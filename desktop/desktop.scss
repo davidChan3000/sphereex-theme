@@ -80,6 +80,9 @@ body{
 
   .category-list tbody{border-top:none;}
   .category-list.with-topics {
+    margin-left: 3px;
+    border: none;
+    padding: 0;
     tbody tr{
       flex-wrap: wrap;
       box-shadow: 0px 0px 6px 0px #cfd3eb;
