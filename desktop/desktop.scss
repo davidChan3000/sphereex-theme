@@ -2,8 +2,12 @@
 @import "variables";
 
 body{
-  background: #fff url($banner) no-repeat;
+  background-color: #fff;
   font-family:'PingFangSC-Medium', 'PingFang SC';
+  
+}
+.categories-list{
+  background: #fff url($banner) no-repeat;
   background-size: contain;
   background-position: top center;
 }
