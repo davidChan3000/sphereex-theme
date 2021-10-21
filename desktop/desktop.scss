@@ -245,6 +245,9 @@ body{
         border-radius: 25px;
         background: #EFEFEF;
     }
+    .btn-primary{
+      background: var(--tertiary);
+    }
 }
 
 #create-topic{background-color: #3d52c5;}
