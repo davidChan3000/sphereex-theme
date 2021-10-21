@@ -172,6 +172,15 @@ body:not(.categories-list) .topic-list .main-link{
 }
 .select-kit .select-kit-header .caret-icon{color:#ddd;}
 .select-kit.is-expanded .select-kit-body{border-radius: 5px;}
+body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-title{
+  font-size: 18px;
+}
+body:not(.categories-list) .topic-list .main-link .byline img.avatar{
+  background: #ededed;
+}
+.topic-list-bottom .footer-message{
+  font-size: 14px;
+}
 
 @media screen and (min-width: 650px) {
   .categories-list #main-outlet,.navigation-topics #main-outlet {
@@ -183,12 +192,15 @@ body:not(.categories-list) .topic-list .main-link{
       
     }
   }
-  body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) #main-outlet{
-    grid-template-columns: 170px auto;
-    .list-container+span{
-      display: none;
+  body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
+    #main .d-header{background: #fff;}
+    #main-outlet{
+      grid-template-columns: 170px auto;
+      .list-container+span{
+        display: none;
+      }
+      .topic-list{width: 101.5%;}
     }
-    .topic-list{width: 101.5%;}
   }
 
   body:not(.categories-list) .topic-list .topic-list-item-separator td{
