@@ -190,11 +190,17 @@ body:not(.categories-list) .topic-list .main-link{
     }
     .topic-list{width: 101.5%;}
   }
+
+  body:not(.categories-list) .topic-list .topic-list-item-separator td{
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 650px) and (max-width: 920px){
-  .topic-list{
-    width: 100%;
+  body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) #main-outlet{
+    .topic-list{
+      width: 100%;
+    }
   }
 }
 
