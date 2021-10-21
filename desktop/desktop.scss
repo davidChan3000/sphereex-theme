@@ -188,7 +188,16 @@ body:not(.categories-list) .topic-list .main-link{
     .list-container+span{
       display: none;
     }
+    .topic-list{width: 101.5%;}
   }
+}
+
+@media screen and (min-width: 650px) and (max-width: 920px){
+  .topic-list{
+    width: 100%;
+  }
+}
+  
 }
 
 //dbook-sidebar
