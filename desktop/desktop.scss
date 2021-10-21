@@ -181,6 +181,10 @@ body:not(.categories-list) .topic-list .main-link .byline img.avatar{
 .topic-list-bottom .footer-message{
   font-size: 14px;
 }
+body[class*="category-"] {
+  #main .d-header{background: #fff;box-shadow:0px 0px 6px 0px #cfd3eb;}
+  #main-outlet{padding-top:1.2em;}
+}
 
 @media screen and (min-width: 650px) {
   .categories-list #main-outlet,.navigation-topics #main-outlet {
@@ -193,7 +197,7 @@ body:not(.categories-list) .topic-list .main-link .byline img.avatar{
     }
   }
   body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) {
-    #main .d-header{background: #fff;}
+    
     #main-outlet{
       grid-template-columns: 170px auto;
       .list-container+span{
