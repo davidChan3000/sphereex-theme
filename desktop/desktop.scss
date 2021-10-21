@@ -183,6 +183,12 @@ body:not(.categories-list) .topic-list .main-link{
       
     }
   }
+  body[class*="category-"]:not(.archetype-regular):not(.archetype-banner) #main-outlet{
+    grid-template-columns: 170px auto;
+    .list-container+span{
+      display: none;
+    }
+  }
 }
 
 //dbook-sidebar
