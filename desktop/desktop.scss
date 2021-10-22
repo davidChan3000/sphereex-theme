@@ -274,7 +274,14 @@ body[class*="category-"],body.search-page {
   #main .d-header{background: #fff;box-shadow:0px 0px 6px 0px #cfd3eb;}
   #main-outlet{padding-top:1.2em;}
 }
-.admin-interface #main-outlet .nav-pills>li>a,.drop-down-mode #main-outlet .nav-pills>li>a{
+.admin-interface #main-outlet .nav-pills>li>a,
+.user-summary-page #main-outlet .nav-pills>li>a,
+.user-activity-page #main-outlet .nav-pills>li>a,
+.user-notifications-page #main-outlet .nav-pills>li>a,
+.user-messages-page #main-outlet .nav-pills>li>a,
+.user-invites-page #main-outlet .nav-pills>li>a,
+.user-badges-page #main-outlet .nav-pills>li>a,
+.user-preferences-page #main-outlet .nav-pills>li>{
     background: none;
 }
 .admin-interface #main-outlet .nav-pills>li>a.active,
