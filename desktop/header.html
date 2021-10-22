@@ -5,13 +5,14 @@
 
   // script wont run unless user is logged in
   if (api.getCurrentUser() === null) return false;
-
+  //console.log(settings)
   api.registerConnectorClass('discovery-below', 'sidebar', {
     setupComponent(args, component) {
       let username = component.get('currentUser.username');
       ajax("/u/" + username + "/summary.json").then (function(result){
 
         const stinkinBadges = [];
+        const setAds = [];
 
         const userLikesReceived = result.user_summary.likes_received;
         const userLikesGiven = result.user_summary.likes_given;
@@ -20,12 +21,23 @@
             stinkinBadges.push(badges);
           });
         }
-
+        if (settings.sidebar_ads) {
+          const setAdsData = settings.sidebar_ads.split('|')
+          setAdsData.forEach(function(ads){
+            let cacheData = ads.split(',')
+            setAds.push({
+              imgUrl : cacheData[0],
+              linkUrl: cacheData[1]
+            })
+          })
+        }
+        
         component.set('userLikesReceived', userLikesReceived);
         component.set('userLikesGiven', userLikesGiven);
         component.set('stinkinBadges', stinkinBadges);
         component.set('userName', api.getCurrentUser().name);
         component.set('user', api.getCurrentUser().username);
+        component.set('ads', setAds)
 
       });
 
@@ -85,11 +97,13 @@
   {{#if user}}
   <a class="sidebar-link" href="/my/summary">{{i18n (theme-prefix "sidebar.full_profile")}}</a>
   {{/if}}
-  <p>
+  <div class="sphere-ads">
   <!--todo-->
-  {{#each (theme-prefix "sidebar.arr_das")}}
-    <span>{{this}}</span>
+  {{#each ads as |b|}}
+    <a href="{{b.linkUrl}}" target="_blank">
+      <img src="{{b.imgUrl}}" />
+    </a>
   {{/each}}
-  </p>
+  </div>
 </script>
 

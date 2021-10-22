@@ -16,3 +16,10 @@ sidebar_show_likes:
 sidebar_show_badges: 
    type: bool 
    default: true
+sidebar_show_ads:
+   type: bool
+   default: false
+sidebar_ads:
+   type: list
+   default: xxxx,dddd
+   description: 图片地址与地址链接用,相隔
