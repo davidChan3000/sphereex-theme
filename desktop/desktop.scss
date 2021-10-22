@@ -285,7 +285,9 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-image
     max-width: 165px;
     margin:0 0px 20px 20px
 }
-
+body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-excerpt{
+  color:var(--tertiary, #08c);
+}
 
 @media screen and (min-width: 650px) {
   .categories-list #main-outlet,.navigation-topics #main-outlet {
