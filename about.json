@@ -13,7 +13,7 @@
     "category": "assets/category.png",
     "latest": "assets/latest.png",
     "read": "assets/read.png",
-    "loginBg": "assets/loginBg.png"
+    "loginBg": "assets/login_bg.png"
   },
   "color_schemes": {
     "Fakebook": {
