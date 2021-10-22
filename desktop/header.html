@@ -97,6 +97,7 @@
   {{#if user}}
   <a class="sidebar-link" href="/my/summary">{{i18n (theme-prefix "sidebar.full_profile")}}</a>
   {{/if}}
+  {{#if (theme-setting "sidebar_show_ads")}}
   <div class="sphere-ads">
   <!--todo-->
   {{#each ads as |b|}}
@@ -105,5 +106,6 @@
     </a>
   {{/each}}
   </div>
+  {{/if}}
 </script>
 
