@@ -28,6 +28,11 @@
 
     </div>
     <div class="link-middle-line" id='{{#if topic.hasExcerpt}}link-middle-line-excerpt{{/if}}' >
+      {{#if topic.image_url}}
+      <div class="topic-image">
+        <img src="{{topic.image_url}}" />
+      </div>
+      {{/if}}
       <div class="topic-title">
         {{~raw "topic-status" topic=topic}}
         {{~topic-link topic class="raw-link raw-topic-link"}}
@@ -45,11 +50,7 @@
         {{raw "list/topic-excerpt" topic=topic}}
       </div>
       {{/if}}
-      {{#if topic.image_url}}
-      <div class="topic-image">
-        <img src="{{topic.image_url}}" />
-      </div>
-      {{/if}}
+      
       {{discourse-tags topic mode="list" tagsForUser=tagsForUser}}
 
 
