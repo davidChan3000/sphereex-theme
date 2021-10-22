@@ -380,6 +380,11 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-image
 .stats-section ul{border-bottom: 1px solid #ddd;}
 //setting
 
+//login
+.login-modal .modal-body.has-alt-auth, .create-account .modal-body.has-alt-auth{
+  background:#fff url($loginBg) no-repeat top right;
+}
+
 @media screen and (min-width: 650px) {
   .categories-list #main-outlet,.navigation-topics #main-outlet {
     @if $sidebar-alignment == "left" {
