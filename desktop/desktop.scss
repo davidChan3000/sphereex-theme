@@ -47,7 +47,7 @@ body{
   }
   .search-menu input[type="text"]{
     min-height: 50px;
-    border-radius: 25px;
+    border-radius: 25px!important;
     border: 1px solid #D4D7E2;
     padding-left: 23px;
     background-color: transparent;
@@ -299,16 +299,21 @@ body[class*="category-"],body.search-page {
     background: var(--quaternary);
     color:#fff;
 }
-.admin-interface #main .d-header,
-.user-summary-page #main .d-header,
-.user-activity-page #main .d-header,
-.user-notifications-page #main .d-header,
-.user-messages-page #main .d-header,
-.user-invites-page #main .d-header,
-.user-badges-page #main .d-header,
-.user-preferences-page #main .d-header{
+.admin-interface ,
+.user-summary-page ,
+.user-activity-page ,
+.user-notifications-page ,
+.user-messages-page ,
+.user-invites-page ,
+.user-badges-page ,
+.user-preferences-page {
+  #main .d-header{
     background-color: #fff;
     box-shadow:0px 0px 6px 0px #cfd3eb;
+  }
+  .nav-pills{
+    background: var(--primary-low);
+  }
 } 
 .user-stream .item, .user-stream .user-stream-item{
     box-shadow:0px 0px 6px 0px #cfd3eb;
@@ -370,7 +375,9 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-image
 .user-secondary-navigation .nav-stacked a.active{
     border-bottom:1px solid #F1EFEF;
 }
-.user-content-wrapper{padding-left:15px;box-sizing: border-box;}
+.user-content-wrapper{padding:0 15px;box-sizing: border-box;}
+
+.stats-section ul{border-bottom: 1px solid #ddd;}
 //setting
 
 @media screen and (min-width: 650px) {
