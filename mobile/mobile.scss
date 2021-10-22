@@ -133,3 +133,31 @@ tr {
 .subcategory-list-item.category {
   width: calc(100% - 10px);
 }
+//todo
+.d-header{
+  border-bottom:0;
+  box-shadow: 0px 0px 6px 0px #cfd3eb;
+}
+body:not(.categories-list) .topic-list{
+  overflow: visible;
+}
+body:not(.categories-list) .topic-list tbody tr{
+  box-shadow: 0px 0px 6px 0px #cfd3eb;
+  border-radius: 5px;
+}
+body:not(.categories-list) .topic-list .main-link{
+  border:none;
+  
+}
+.post-stream article, .post-stream .small-action{
+  box-shadow: 0px 0px 6px 0px #cfd3eb;
+  border-radius: 5px;
+}
+.search-container .search-header{
+  background:#F5F6FA;
+  border-radius: 5px;
+}
+.fps-result{
+  border:none;
+  box-shadow: 0px 0px 6px 0px #cfd3eb;
+}
