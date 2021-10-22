@@ -277,7 +277,14 @@ body[class*="category-"],body.search-page {
 .admin-interface #main-outlet .nav-pills>li>a,.drop-down-mode #main-outlet .nav-pills>li>a{
     background: none;
 }
-.admin-interface #main-outlet .nav-pills>li>a.active,.drop-down-mode #main-outlet .nav-pills>li>a.active{
+.admin-interface #main-outlet .nav-pills>li>a.active,
+.user-summary-page #main-outlet .nav-pills>li>a.active,
+.user-activity-page #main-outlet .nav-pills>li>a.active,
+.user-notifications-page #main-outlet .nav-pills>li>a.active,
+.user-messages-page #main-outlet .nav-pills>li>a.active,
+.user-invites-page #main-outlet .nav-pills>li>a.active,
+.user-badges-page #main-outlet .nav-pills>li>a.active,
+.user-preferences-page #main-outlet .nav-pills>li>a.active{
     background: var(--quaternary);
     color:#fff;
 }
@@ -285,6 +292,7 @@ body[class*="category-"],body.search-page {
     box-shadow:0px 0px 6px 0px #cfd3eb;
     margin-bottom: 12px;
 }
+
 
 //search
 .fps-result{
