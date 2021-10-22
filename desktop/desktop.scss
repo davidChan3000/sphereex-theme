@@ -274,7 +274,7 @@ body[class*="category-"],body.search-page {
   border:none;
   box-shadow: 0px 0px 6px 0px #cfd3eb;
 }
-
+.search-container .search-header{border-radius: 5px;background: #F5F6FA;}
 
 @media screen and (min-width: 650px) {
   .categories-list #main-outlet,.navigation-topics #main-outlet {
