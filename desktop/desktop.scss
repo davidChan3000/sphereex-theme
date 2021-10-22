@@ -382,7 +382,7 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-image
 
 //login
 .login-modal .modal-body.has-alt-auth, .create-account .modal-body.has-alt-auth{
-  background:#fff url($loginBg) no-repeat top right;
+  background:#4054be url($login) no-repeat top right;
 }
 
 @media screen and (min-width: 650px) {
