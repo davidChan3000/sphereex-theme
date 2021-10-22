@@ -7,9 +7,10 @@ body{
   
 }
 .categories-list,.navigation-topics{
-  background: #fff url($banner) no-repeat;
-  background-size: contain;
-  background-position: top center;
+//   background: #fff url($banner) no-repeat;
+//   background-size: contain;
+//   background-position: top center;
+    background-color: #fff;
 }
 #main{
   .d-header {
@@ -298,6 +299,17 @@ body[class*="category-"],body.search-page {
     background: var(--quaternary);
     color:#fff;
 }
+.admin-interface #main .d-header,
+.user-summary-page #main .d-header,
+.user-activity-page #main .d-header,
+.user-notifications-page #main .d-header,
+.user-messages-page #main .d-header,
+.user-invites-page #main .d-header,
+.user-badges-page #main .d-header,
+.user-preferences-page #main .d-header{
+    background-color: #fff;
+    box-shadow:0px 0px 6px 0px #cfd3eb;
+} 
 .user-stream .item, .user-stream .user-stream-item{
     box-shadow:0px 0px 6px 0px #cfd3eb;
     margin-bottom: 12px;
@@ -355,7 +367,10 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-image
 }
 .form-vertical input, .form-vertical textarea, .form-vertical select{border-radius: 5px;}
 .user-preferences .bio-composer, .group-form-bio{border-radius: 5px;}
-.nav-pills{}
+.user-secondary-navigation .nav-stacked a.active{
+    border-bottom:1px solid #F1EFEF;
+}
+.user-content-wrapper{padding-left:15px;box-sizing: border-box;}
 //setting
 
 @media screen and (min-width: 650px) {
