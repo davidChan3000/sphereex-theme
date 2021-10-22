@@ -52,6 +52,7 @@
   type="text/x-handlebars"
   data-template-name="/connectors/discovery-below/sidebar"
 >
+  <div class="dbook-sidebar-mod">
   <div class="dbook-sidebar">
     {{#if (theme-setting "sidebar_show_intro")}}
     <h2>🤗 {{i18n (theme-prefix "sidebar.welcome")}} {{#if userName}}{{i18n (theme-prefix "sidebar.back")}} {{userName}} {{/if}} </h2>
@@ -97,10 +98,12 @@
   {{#if user}}
   <a class="sidebar-link" href="/my/summary">{{i18n (theme-prefix "sidebar.full_profile")}}</a>
   {{/if}}
+</div>
   {{#if (theme-setting "sidebar_show_ads")}}
   {{#if ads}}
   <div class="sphere-ads">
   <!--todo-->
+  <h3>热门活动</h3>
   {{#each ads as |b|}}
     <a href="{{b.linkUrl}}" target="_blank">
       <img src="{{b.imgUrl}}" />
