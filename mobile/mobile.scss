@@ -185,5 +185,9 @@ body:not(.categories-list) .topic-list .main-link{
 
 .custom-search-banner{
   background:url($banner) no-repeat top center;
-  background-size: contain;
+  background-size: cover;
+}
+.categories-list .category-list{
+  border:none;
+  box-shadow: 0px 0px 6px 0px #cfd3eb;
 }
