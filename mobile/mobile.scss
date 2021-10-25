@@ -174,5 +174,16 @@ body:not(.categories-list) .topic-list .main-link{
 }
 .custom-search-banner-wrap .search-icon{
   background-color: #3D52C5;
+  
+}
+.custom-search-banner-wrap .search-icon .d-icon{
   color: #fff;
+}
+#create-topic{
+  background-color: #3D52C5;
+}
+
+.custom-search-banner{
+  background:url($banner) no-repeat top center;
+  background-size: contain;
 }
