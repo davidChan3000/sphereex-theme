@@ -271,6 +271,9 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-title
 body:not(.categories-list) .topic-list .main-link .byline img.avatar{
   background: #d8d8d8;
 }
+body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-excerpt-more{
+  color:var(--tertiary, #08c);
+}
 .topic-list-bottom .footer-message{
   font-size: 14px;
 }
