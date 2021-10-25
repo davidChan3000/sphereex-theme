@@ -322,7 +322,9 @@ body[class*="category-"],body.search-page {
     box-shadow:0px 0px 6px 0px #cfd3eb;
     margin-bottom: 12px;
 }
-
+code, pre{
+  width: calc(100%);
+}
 
 //search
 .fps-result{
