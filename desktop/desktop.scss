@@ -397,12 +397,17 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-image
 .login-modal:not(.hidden) #login-form .input-group #forgot-password-link, .login-modal:not(.hidden) #login-form .input-group #email-login-link, .login-modal:not(.hidden) .login-form .input-group #forgot-password-link, .login-modal:not(.hidden) .login-form .input-group #email-login-link, .create-account #login-form .input-group #forgot-password-link, .create-account #login-form .input-group #email-login-link, .create-account .login-form .input-group #forgot-password-link, .create-account .login-form .input-group #email-login-link{
   color:#3D52C5;
 }
-.modal-footer .login-button{
+.modal-footer .btn{
   background-color: #3D52C5;
   font-size: 15px;
 }
 .modal-footer .btn-primary{
   padding:.5em 1.92em;
+}
+
+//mixins
+.btn-primary{
+  background-color: #3D52C5;
 }
 
 @media screen and (min-width: 650px) {
