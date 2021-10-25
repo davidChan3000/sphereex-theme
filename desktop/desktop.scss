@@ -323,7 +323,7 @@ body[class*="category-"],body.search-page {
     margin-bottom: 12px;
 }
 code, pre{
-  width: calc(100%);
+  max-width: 850px;
 }
 
 //search
