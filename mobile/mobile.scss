@@ -191,3 +191,23 @@ body:not(.categories-list) .topic-list .main-link{
   border:none;
   box-shadow: 0px 0px 6px 0px #cfd3eb;
 }
+.d-header-icons .icon img.avatar{
+  background-color: #D8D8D8;
+}
+
+.d-modal.login-modal:not(.hidden).fixed-modal .modal-inner-container, .d-modal.create-account.fixed-modal .modal-inner-container{
+  border-radius: 10px;
+}
+.d-modal.create-account .login-welcome-header, .d-modal.login-modal .login-welcome-header, .invites-show .login-welcome-header{
+  grid-template-columns: auto 0fr;
+  text-align: center;
+}
+.d-modal.create-account .login-welcome-header .waving-hand, .d-modal.login-modal .login-welcome-header .waving-hand, .invites-show .login-welcome-header .waving-hand{
+  display: none;
+}
+.modal-footer .btn{
+  font-size: 15px;
+}
+.modal-footer .btn-primary{
+  padding:0.5em 1.95em;
+}
