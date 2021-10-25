@@ -184,7 +184,7 @@ body:not(.categories-list) .topic-list .main-link{
 }
 
 .custom-search-banner{
-  background:url($banner) no-repeat top center;
+  background:url($mbanner) no-repeat top center;
   background-size: cover;
 }
 .categories-list .category-list{
@@ -210,4 +210,5 @@ body:not(.categories-list) .topic-list .main-link{
 }
 .modal-footer .btn-primary{
   padding:0.5em 1.95em;
+  background-color: #3D52C5;
 }

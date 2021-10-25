@@ -9,6 +9,7 @@
   "maximum_discourse_version": null,
   "assets": {
     "banner": "assets/banner.png",
+    "mbanner": "assets/banner_mobile.png",
     "hot": "assets/hot.png",
     "category": "assets/category.png",
     "latest": "assets/latest.png",
