@@ -197,6 +197,10 @@ body{
     .topic-body{
         width: calc(100%);
         padding:0;
+        .regular{
+            z-index: 9;
+            left:-30px;
+        }
     }
 
     #suggested-topics .topic-list .main-link{
@@ -460,23 +464,29 @@ body:not(.categories-list) .topic-list .main-link .link-middle-line .topic-image
             width: calc(100%);
         }
       }
-  }   
-  .code, pre{
-      max-width: calc(100vw - 110px);
   }
-
+   .code, pre{
+        max-width: calc(100vw - 110px);
+    }
+    .archetype-regular .topic-body{
+        width: calc(100% - 60px);
+    }
+  
 }
 @media screen and (max-width: 650px) {
-  .archetype-regular{
-      #topic-title{
-        .title-wrapper{
-            width: calc(100%);
+    .archetype-regular{
+        #topic-title{
+          .title-wrapper{
+              width: calc(100%);
+          }
         }
-      }
-  }
-  .code, pre{
-      max-width: calc(100vw - 110px);
-  }
+    }
+    .code, pre{
+        max-width: calc(100vw - 110px);
+    }
+    .archetype-regular .topic-body{
+        width: calc(100% - 60px);
+    }
 }
 
 //dbook-sidebar
