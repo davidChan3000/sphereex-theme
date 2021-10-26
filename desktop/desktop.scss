@@ -7,10 +7,10 @@ body{
   
 }
 .categories-list,.navigation-topics{
-  background: #fff url($banner) no-repeat;
-  background-size: contain;
-  background-position: top center;
-    // background-color: #fff;
+  // background: #fff url($banner) no-repeat;
+  // background-size: contain;
+  // background-position: top center;
+	background-color: #fff;
 }
 #main{
   .d-header {
@@ -34,7 +34,8 @@ body{
   max-width: 1110px;
 }
 .custom-search-banner-wrap{
-  padding:4.5em 0 11em;
+  // padding:4.5em 0 11em;
+	padding: 4.2em 0 4.5em;
   h1{
     font-size: 50px;
     font-weight: 500;
@@ -72,6 +73,9 @@ body{
 }
 
 #main-outlet{
+	background: #fff url($banner) no-repeat;
+  background-size: contain;
+  background-position: top center;
   .list-controls{
     .container{
       box-shadow: 0px 0px 5px 0px #cfd3eb;
